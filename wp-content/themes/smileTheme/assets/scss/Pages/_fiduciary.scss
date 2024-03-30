@@ -1,0 +1,70 @@
+.container {
+  .fiduciary-table {
+    margin-top: 7rem;
+    overflow: auto;
+
+    table {
+      min-width: 1028px;
+      width: 100%;
+
+      tr {
+        border-top: solid 2px #CC7B16;
+        border-bottom: solid 2px #CC7B16;
+
+        td {
+          vertical-align: middle;
+        }
+      }
+
+      thead {
+        th {
+          font-size: 1.9rem;
+          color: #CC7B16;
+          padding: 1rem 0;
+
+        }
+      }
+
+      tbody {
+        td {
+          padding: 1rem 0;
+        }
+      }
+    }
+
+    ul {
+      li {
+        border-bottom: solid 2px #CC7B16;
+        padding: 1rem;
+
+        .insurance-amount {
+          background-color: #CC7B16;
+          font-size: 2rem;
+          color: white;
+          border-radius: 3.5px;
+          padding: 0.5rem;
+        }
+
+        .fiduciary-padding {
+          padding: 1rem 5rem;
+
+          @include sm {
+            padding: 0 0.5rem;
+          }
+        }
+      }
+    }
+
+    .fiduciary-yard {
+      border: solid 3px #FF0001;
+      border-radius: 1.6rem;
+      display: flex;
+      padding: 1.4rem;
+      margin-top: 3rem;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

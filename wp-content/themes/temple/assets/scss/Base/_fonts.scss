@@ -1,0 +1,104 @@
+// -----------------------------------------------------------------------------
+// This file contains all @font-face declarations, if any.
+// -----------------------------------------------------------------------------
+
+@font-face {
+    font-family: KozGoPr6N-Bold;
+    src: url('../fonts/KozGoPr6N-Bold.otf');
+}
+
+@font-face {
+    font-family: KozGoPr6N-Medium;
+    src: url('../fonts/KozGoPr6N-Medium.otf');
+}
+
+@font-face {
+    font-family: KozGoPr6N-Regular;
+    src: url('../fonts/KozGoPr6N-Regular.otf');
+}
+
+@font-face {
+    font-family: KozGoPr6N-Light;
+    src: url('../fonts/KozGoPr6N-Light.otf');
+}
+
+@font-face {
+    font-family: hiraMinProp-regular;
+    src: url('../fonts/HiraMinPro-W3.otf');
+}
+
+@font-face {
+    font-family: hiraMinProp-bold;
+    src: url('../fonts/HiraMinPro-W6.otf');
+}
+
+@font-face {
+    font-family: noto-black;
+    src: url('../fonts/NotoSansCJKjp-Black.otf');
+}
+
+@font-face {
+    font-family: noto-bold;
+    src: url('../fonts/NotoSansCJKjp-Bold.otf');
+}
+
+@font-face {
+    font-family: noto-regular;
+    src: url('../fonts/NotoSansCJKjp-Regular.otf');
+}
+
+@font-face {
+    font-family: BalooBhaijaan-Regular;
+    src: url('../fonts/Baloo Bhaijaan Regular.ttf');
+}
+@font-face {
+    font-family: BGothicMB101Pro-Regular;
+    src: url('../fonts/A-OTF Gothic MB101 Pro R.otf');
+}
+
+@font-face {
+    font-family: noto-semi-bold;
+    src: url('../fonts/FontsFree-Net-NotoSans-SemiBold.ttf');
+}
+
+@mixin notosemibold {
+    font-family: noto-semi-bold;
+}
+
+@mixin KozGoPr6N($type: 'regular') {
+    @if ($type == 'bold') {
+        font-family: KozGoPr6N-Bold;
+    }
+    @if ($type == 'medium') {
+        font-family: KozGoPr6N-Medium;
+    }
+    @if ($type == 'regular') {
+        font-family: KozGoPr6N-Regular;
+    }
+    @if ($type == 'light') {
+        font-family: KozGoPr6N-Light;
+    }
+}
+
+@mixin hiraMinPro($type: 'regular') {
+    @if ($type == 'bold') {
+        font-family: hiraMinProp-bold;
+    }
+    @if ($type == 'regular') {
+        font-family: hiraMinProp-regular;
+    }
+       
+}
+
+@mixin notoSansCJKjp($type: 'regular') {
+    @if ($type == 'black') {
+        font-family: noto-black;
+    }
+    @if ($type == 'bold') {
+        font-family: noto-bold;
+    }
+    @if ($type == 'regular') {
+        font-family: noto-regular;
+    }
+}
+

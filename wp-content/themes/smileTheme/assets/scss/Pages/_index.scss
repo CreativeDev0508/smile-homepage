@@ -1,0 +1,375 @@
+.news {
+  position: relative;
+  padding: 24rem 0 7.5rem;
+
+  @include sm {
+    padding: 11rem 0;
+  }
+
+  .news-layout {
+
+    .news-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .news-title {
+        padding: 0 2rem;
+        font-size: 2.4rem;
+        color: $font_color;
+      }
+
+      a {
+        color: $font_color;
+        padding: 0 2rem;
+      }
+    }
+
+    .news-content {
+      .news-item {
+        font-size: 1.8rem;
+        font-weight: 500;
+        padding: 2rem 2rem;
+        border-bottom: 1px solid #00A99D;
+        display: flex;
+        justify-content: space-between;
+
+        .title {
+          width: 85%;
+
+          @include sm {
+            width: 75%;
+          }
+        }
+
+        &:first-child {
+          border-top: 1px solid #00A99D;
+        }
+      }
+    }
+  }
+
+  .img-group {
+    display: flex;
+    padding: 2rem;
+    margin-top: 5rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @include sm {
+      justify-content: center;
+    }
+
+    .img {
+      position: relative;
+      margin: 2.5rem 0;
+
+      &:nth-child(2) {
+        a {
+          padding: 0.8rem 0;
+        }
+      }
+
+      .hover-element {
+        display: none;
+        width: 36rem;
+        height: 36rem;
+        background-color: #00A99D;
+        mix-blend-mode: multiply;
+        position: absolute;
+        top: -1.65rem;
+        left: -1.65rem;
+
+        @include sm {
+          width: 63.3rem;
+          height: 26.5rem;
+        }
+      }
+
+      &:last-child {
+        .hover-element {
+          background-color: #ED1C24;
+        }
+
+        a {
+          background-color: #ED1C24;
+
+          span {
+            border-radius: 50%;
+            background-color: white;
+            color: #ED1C24;
+            padding: 0 1.2rem 0 1.4rem;
+            margin-right: 2rem;
+          }
+        }
+      }
+
+
+      &:hover {
+        .hover-element {
+          display: block;
+        }
+
+        a {
+          background-color: unset;
+          box-shadow: none;
+
+          .open {
+            display: block;
+          }
+        }
+
+        z-index: 9;
+      }
+
+      img {
+
+        &:first-of-type {
+          width: 32.7rem;
+
+          @include sm {
+            display: none;
+          }
+        }
+
+        &:last-of-type {
+          display: none;
+
+          @include sm {
+            width: 100%;
+            display: block;
+          }
+        }
+      }
+
+      a {
+        position: absolute;
+        top: 12rem;
+        left: 0.7rem;
+        width: 31rem;
+        background-color: #00A99D;
+        box-shadow: 0.28rem 0.28rem white;
+        font-size: 2.28rem;
+        color: white;
+        padding: 2.5rem 0;
+        text-align: center;
+        letter-spacing: 0.4rem;
+
+        @include sm {
+          top: 9rem;
+          left: 7rem;
+          width: 45.3rem;
+          padding: 1rem 0;
+        }
+
+        .open {
+          display: none;
+          font-size: 1.2rem;
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+
+  .pamphlet {
+    font-family: felbe;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #DCDDDE;
+    border-radius: 2.8rem;
+    margin-top: 6rem;
+    padding: 1.9rem 2.2rem;
+
+    @include md {
+      flex-direction: column;
+      border-radius: 0;
+    }
+
+    .pamphlet-text {
+      font-size: 2.4rem;
+    }
+
+    .pamphlet-rp-text {
+      @include md {
+        display: none;
+      }
+    }
+
+    .pamphlet-rp-sm-text {
+      display: none;
+
+      @include md {
+        display: block;
+        letter-spacing: 0.6rem;
+        margin-top: 3rem;
+      }
+    }
+
+    .sm-pamphlet {
+      display: none;
+
+      @include md {
+        display: flex;
+      }
+
+      .insurance {
+        width: 34rem;
+        margin-right: 1rem;
+
+        .insurance-title {
+          font-size: 1.2rem;
+        }
+
+        .insurance-tel {
+          font-size: 1.2rem;
+        }
+
+        .insurance-fax {
+          font-size: 1.2rem;
+          padding: 0.2rem 0.5rem;
+        }
+
+        .insurance-fax-num {
+          font-size: 1.7rem;
+        }
+
+        .insurance-num {
+          font-size: 1.7rem;
+        }
+
+        .sm-block {
+          display: none;
+
+          @include md {
+            display: contents;
+            font-size: 1rem;
+          }
+
+          @include sm {
+            font-size: 8px;
+          }
+        }
+      }
+
+      .insurance2 {
+        width: 19.8rem;
+
+        .insurance-faq {
+          font-size: 1.2rem;
+          padding: 0;
+          margin-right: 1.5rem;
+        }
+      }
+
+    }
+
+    .pamphlet-btn {
+      width: 40rem;
+      border-radius: 1.2rem;
+      background-color: #01947F;
+      color: white;
+      padding: 2rem 0 2.2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      @include md {
+        padding: 1rem;
+        margin-top: 1.8rem;
+        width: 24.7rem;
+      }
+
+      img {
+        padding-right: 1rem;
+
+        @include md {
+          padding: 0;
+          margin-right: 1rem;
+          width: 2.7rem;
+        }
+      }
+
+      span {
+        font-size: 2.2rem;
+      }
+
+      .insurance-faq {
+        font-size: 2.2rem;
+        padding: 6rem 3.4rem;
+      }
+    }
+
+    .insurance {
+      display: block;
+      padding: 1.2rem 2.8rem;
+
+      @include md {
+        padding: 1rem;
+      }
+
+      .insurance-title {
+        font-size: 2.3rem;
+      }
+
+      .insurance-grp {
+        display: flex;
+        align-items: center;
+        font-family: Helvetica;
+        font-weight: bold;
+
+        @include md {
+          border-bottom: solid 1px #fff;
+        }
+
+      }
+
+      .insurance-tel {
+        background-color: white;
+        font-size: 2.5rem;
+        color: #01947F;
+        padding: 0 0.5rem;
+        margin-right: 1rem;
+      }
+
+      .insurance-num {
+        font-size: 4.2rem;
+        color: white;
+      }
+
+      .insurance-fax {
+        font-size: 2rem;
+        color: #01947F;
+        padding: 0 1rem;
+        background-color: white;
+        margin-right: 1rem;
+
+        @include md {
+          margin-left: 1rem;
+        }
+      }
+
+      .insurance-fax-num {
+        font-size: 2.8rem;
+      }
+
+      .insurance-time {
+        font-size: 1.7rem;
+      }
+
+      p {
+        border-top: 1px solid;
+
+        &:first-child {
+          border: none;
+        }
+      }
+    }
+
+    .sm-none {
+      @include md {
+        display: none;
+      }
+    }
+  }
+}

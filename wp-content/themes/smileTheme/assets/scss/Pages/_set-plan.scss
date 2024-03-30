@@ -1,0 +1,200 @@
+.container {
+
+
+  .insurance-table {
+    overflow: auto;
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+
+      .accident-img1 {
+        width: 25.9rem;
+      }
+
+      thead {
+        tr {
+          border-top: solid 2px #FF0001;
+          border-bottom: solid 2px #FF0001;
+
+          th {
+            &:first-child {
+              width: 20%;
+            }
+
+            color: #FF0001;
+            font-size: 1.9rem;
+            padding: 2.8rem 0;
+            vertical-align: middle;
+          }
+        }
+      }
+
+      tbody {
+
+
+
+
+        .insurance-delivery {
+          font-size: 2.1rem;
+          color: #ED1C24;
+        }
+
+
+        tr {
+
+          &:first-child {
+            background-color: #FFEDE0;
+
+            table {
+              td {
+                @extend .product-color;
+              }
+            }
+          }
+
+          &:nth-child(2) {
+            background-color: #E9F4E7;
+
+            table {
+              td {
+                @extend .manager-color;
+              }
+            }
+          }
+
+          &:nth-child(3) {
+            background-color: #E1F4FD;
+
+            table {
+              td {
+                @extend .business-color;
+              }
+            }
+          }
+
+          td {
+            padding: 3.6rem 4.8rem 1.5rem 3rem;
+
+            p {
+              padding: 0.5rem;
+            }
+
+            table {
+
+              tr {
+                border-top: solid 2px #F37021;
+                border-bottom: solid 2px #F37021;
+              }
+
+              td {
+                padding: 0.5rem 0;
+                @extend .product-color;
+                @extend .font-size-18;
+              }
+
+              .insurance-payment {
+                border: solid 2px #F37021;
+                clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+                padding: 0;
+              }
+
+
+            }
+          }
+        }
+      }
+
+      &:nth-child(2) {
+        thead {
+          th {
+            &:first-child {
+              width: 25%;
+            }
+          }
+        }
+
+        tbody {
+          tr {
+            td {
+              text-align: center;
+              padding: 0;
+              vertical-align: middle;
+
+              &:first-child {
+                text-align: left;
+                padding-left: 3rem;
+              }
+
+            }
+
+            &:nth-child(2) {
+              td {
+                .insurance-person {
+                  background-color: #0DB14B;
+                }
+              }
+            }
+
+            &:nth-child(3) {
+              td {
+                .insurance-person {
+                  background-color: #0072BC;
+                }
+              }
+            }
+          }
+
+          .insurance-person {
+            background-color: #F37021;
+            color: white;
+            font-size: 1.5rem;
+            margin: 0.48rem;
+            padding: 0 1.8rem;
+
+            p {
+              padding: 0;
+            }
+          }
+
+          .million {
+            font-size: 2rem;
+            color: #F37021;
+          }
+
+          .three-money {
+            font-size: 3rem;
+            color: #F37021;
+          }
+
+          .four-money {
+            font-size: 5rem;
+            color: #ED1C24;
+          }
+        }
+      }
+
+    }
+  }
+
+  .report-download {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    .width-45 {
+      width: 44.7rem !important;
+    }
+
+    .width-52 {
+      width: 52.7rem !important;
+    }
+
+    .width-40 {
+      width: 40rem !important;
+    }
+  }
+
+
+}

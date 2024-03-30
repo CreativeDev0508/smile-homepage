@@ -1,0 +1,91 @@
+.container {
+  .welfare-imgs {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @include md {
+      flex-direction: column;
+    }
+
+    .welfare-img {
+      width: 48%;
+      background-color: #C9E9E6;
+      margin: 1.5rem 0;
+      padding: 3.25rem 2.57rem 1.7rem;
+      @include md {
+        width: 100%;
+      }
+
+      p {
+        font-size: 3rem;
+        color: #00A99D;
+
+        &:last-of-type {
+          font-size: 1.98rem;
+          color: black;
+        }
+      }
+
+      &:first-child {
+        background-image: linear-gradient(45deg, #0670B0, #0578A4, #02947D);
+        text-align: center;
+
+        padding: 7.3rem 11.3rem;
+
+        p {
+          font-size: 5.8rem;
+          color: white;
+          font-family: A1MinchoStd-Bold;
+          padding: 0;
+
+          &:last-child {
+            font-size: 4.1rem;
+          }
+        }
+      }
+
+      .welfare-img-grp {
+        display: flex;
+        justify-content: space-between;
+
+        img {
+          width: 22.6rem;
+          margin-top: 2rem;
+          @include lg {
+            width: 45%;
+          }
+          @include sm {
+            width: 49%;
+          }
+
+          &:first-child {
+            margin-right: 2rem;
+          }
+        }
+      }
+    }
+
+  }
+
+  .download-group {
+    margin-top: 5.6rem;
+
+    &-component {
+      display: flex;
+      align-items: center;
+      margin-top: 2.1rem;
+
+      img {
+        width: 4.3rem;
+        margin-right: 1rem;
+      }
+
+      p {
+        font-size: 2.4rem;
+        color: red;
+        border-bottom: 1px solid red;
+      }
+    }
+  }
+}

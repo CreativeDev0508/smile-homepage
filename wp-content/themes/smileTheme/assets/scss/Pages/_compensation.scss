@@ -1,0 +1,186 @@
+.container {
+  .compensation-form {
+    form {
+      font-size: 2.2rem;
+
+      input[type="submit"] {
+        width: 19.5rem;
+        margin: auto;
+        background-color: #01947F;
+        color: white;
+        border: none;
+        padding: 1rem 0;
+      }
+
+      .member-info {
+        &>p {
+          margin-top: 2rem;
+          border-bottom: solid 2px #00A99D;
+
+          span {
+            &:nth-child(2) {
+              @include md {
+                display: block;
+              }
+            }
+          }
+        }
+
+        .member-info-title {
+          font-size: 2.8rem;
+          color: #00A99D;
+          margin-right: 10rem;
+        }
+
+        .compensation-form-group {
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+
+          @include lg {
+            flex-direction: column;
+            text-align: left;
+          }
+
+          &>div {
+            width: 50%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            position: relative;
+
+            @include lg {
+              display: block;
+              width: 100%;
+            }
+
+            label {
+              span {
+                &:first-child {
+                  position: absolute;
+                  left: 1rem;
+                  top: 1.8rem;
+
+                  @include lg {
+                    position: relative;
+                    top: 0;
+
+                  }
+
+                  @include sm {}
+                }
+              }
+            }
+          }
+
+          input {
+            padding: 0.5rem;
+            width: 32.5rem;
+            margin: 1rem 0;
+            height: 5rem;
+
+            @include lg {
+              width: 100%;
+            }
+          }
+
+          &:last-child {
+            input {
+              width: 86.5rem;
+              margin-left: 2rem;
+
+              @include md {
+                width: 100%;
+              }
+            }
+          }
+
+          .compensation-custom {
+            width: 86.5rem;
+
+            @include md {
+              width: 100%;
+            }
+          }
+
+        }
+      }
+
+      .accident-info {
+        &>p {
+          margin-top: 2rem;
+          border-bottom: solid 2px #00A99D;
+        }
+
+        &-title {
+          font-size: 2.8rem;
+          color: #00A99D;
+          margin-right: 10rem;
+        }
+      }
+
+      .must {
+        background-color: #00A99D;
+        color: white;
+        padding: 0.5rem;
+        font-size: 1.6rem;
+        margin-inline: 2rem;
+      }
+
+      .accident-form-group-custom {
+        width: 58.5%;
+
+        @include md {
+          width: 100%;
+        }
+      }
+
+      .accident-form-group {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        position: relative;
+
+        @include lg {
+          display: block;
+        }
+
+        .full-name {
+          width: 32rem;
+
+          @include lg {
+            width: 100%;
+          }
+        }
+
+        label {
+          span {
+            &:first-child {
+              position: absolute;
+              left: 0;
+
+              @include lg {
+                position: relative;
+              }
+            }
+          }
+        }
+
+        input,
+        textarea {
+          width: 77rem;
+          padding: 1rem;
+          margin: 1rem;
+
+          @include lg {
+            width: 100%;
+          }
+        }
+      }
+
+
+    }
+
+  }
+
+}

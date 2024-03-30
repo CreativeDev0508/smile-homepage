@@ -1,0 +1,65 @@
+.container {
+
+  .comprehensive-table {
+    overflow: auto;
+
+    table {
+      width: 100%;
+      min-width: 768px;
+      font-size: 19px;
+
+      th {
+        @extend .comprehensive-color;
+        padding: 0.5rem;
+      }
+
+      tr {
+        border-bottom: solid 2px #00984A;
+        border-top: solid 2px #00984A;
+
+        td {
+          padding: 0.5rem;
+          text-align: center;
+          vertical-align: middle;
+
+        }
+      }
+    }
+  }
+
+  .insurance-features {
+    &-title {
+      width: fit-content;
+      border-bottom: solid 2px #00984A;
+      margin-top: 3rem;
+      font-size: 2.2rem;
+    }
+
+    ul {
+      margin-top: 2rem;
+      font-size: 1.8rem;
+
+      li {
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    .insurance-claim {
+      background-color: #E4DDED;
+      width: fit-content;
+      padding: 3rem 4rem;
+
+      &-damage {
+        margin-left: 3rem;
+
+        p {
+          &:first-child {
+            border-bottom: solid 2px #92278F;
+          }
+        }
+      }
+    }
+  }
+}

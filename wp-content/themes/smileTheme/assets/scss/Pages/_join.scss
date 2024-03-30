@@ -1,0 +1,186 @@
+.container {
+  .step {
+    margin-left: 4rem;
+
+    &-title {
+      border-bottom: 1px solid #00A99D;
+      margin-top: 4rem;
+
+      p {
+        font-size: 2.8rem;
+        color: #00A99D;
+      }
+    }
+
+    &-content {
+      margin-top: 1rem;
+
+      @include sm {
+        display: block !important;
+      }
+
+      p {
+        font-size: 2.2rem;
+        color: black;
+      }
+
+      .fill-in {
+        display: flex;
+        justify-content: end;
+
+        .fill-in-membership {
+          margin-right: 4rem;
+
+          img {
+            width: 100%;
+          }
+        }
+
+        .fill-in-insurance {
+          img {
+            width: 100%;
+          }
+        }
+
+        .fill-in-envelope {
+          top: -5rem;
+          right: 5rem;
+
+          img {
+            width: 17.6rem;
+
+            @include sm {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+
+    &-pamphlet {
+      background: unset;
+    }
+
+    .insurance-title-custom {
+      font-size: 2.7rem !important;
+      font-weight: bold;
+
+    }
+
+    .insurance-tel-custom {
+      background-color: unset !important;
+
+      img {
+        width: 6rem;
+        vertical-align: bottom;
+      }
+    }
+
+    .insurance-time-custom {
+      font-size: 1.9rem !important;
+      margin-top: 1rem;
+      border-top: none !important;
+    }
+
+    .insurance-num-custom {
+      font-family: Helvetica, sans-serif;
+      font-weight: bold;
+
+      @include md {
+        font-size: 3.5rem !important;
+      }
+    }
+
+    .insurance-faq-custom {
+      font-weight: bold !important;
+    }
+
+    .pamphlet-btn-custom {
+      padding: 0 !important;
+    }
+
+    .pamphlet-width {
+      width: 41rem !important;
+    }
+
+    .position-relative {
+      position: relative !important;
+    }
+
+    .position-absolute {
+      position: absolute;
+    }
+
+    .width-61 {
+      width: 61%;
+
+      @include sm {
+        width: 100%;
+      }
+    }
+
+    .step-5 {
+      margin-top: 15rem;
+
+      .payee {
+        width: 40rem;
+        background-color: #00A99D;
+        border-radius: 1.2rem;
+        padding: 2.3rem 3.5rem;
+        @include sm {
+          width: 100%;
+        }
+
+        .payee-title {
+          border-bottom: 1px solid white;
+
+          p {
+            font-size: 2.3rem;
+            color: white;
+          }
+        }
+
+        .payee-content {
+          margin-top: 1rem;
+
+          p {
+            font-size: 2.2rem;
+            color: white;
+          }
+        }
+      }
+    }
+
+    .danger {
+      margin-top: 2rem;
+
+      .danger-title {
+        border-bottom: 1px solid red;
+
+        p {
+          color: red;
+          font-size: 2.8rem;
+        }
+      }
+
+      .danger-content {
+        p {
+          color: red;
+          font-size: 2.4rem;
+        }
+      }
+    }
+  }
+
+  .flex-start {
+    justify-content: start;
+  }
+
+  .p-0 {
+    padding: 0;
+  }
+
+  .mr-3 {
+    margin-right: 3rem;
+  }
+}

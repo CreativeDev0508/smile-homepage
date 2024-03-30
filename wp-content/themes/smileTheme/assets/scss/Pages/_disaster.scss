@@ -1,0 +1,104 @@
+.container {
+
+  .disaster-ans-que {
+    .disaster-ans {
+      position: relative;
+
+      img {
+        width: 27rem;
+        margin-top: 4rem;
+        height: 8rem;
+      }
+
+      .message-box2 {
+        width: 43rem;
+      }
+
+      .message-box3 {
+        width: 36.5rem;
+      }
+
+      .message-box4 {
+        width: 38.5rem;
+      }
+
+      p {
+        position: absolute;
+        top: 5rem;
+        left: 2.5rem;
+        font-size: 2.8rem;
+        color: #00A99D;
+        font-weight: bold;
+
+        @include md {}
+      }
+    }
+
+    .disaster-que {
+      font-size: 2.2rem;
+      color: black;
+      display: block;
+      padding-left: 4rem;
+
+      span {
+        color: red;
+        border-bottom: 1px solid red;
+      }
+
+      .my-1 {
+        margin: 1rem 0;
+      }
+
+      .disaster-que-table {
+        overflow-x: auto;
+      }
+
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        text-align: center;
+        min-width: 640px;
+
+      }
+
+
+
+      thead {
+        background-color: #00A99D;
+      }
+
+      th,
+      td {
+        border: 1px solid #00A99D;
+        padding: 0.8rem;
+        font-size: 2.4rem;
+        font-weight: bold;
+        letter-spacing: 4.8px;
+      }
+
+      th {
+
+        color: white;
+        border-right-color: white;
+
+        &:last-child {
+          border-right-color: #00A99D;
+        }
+      }
+
+      td {
+
+
+        &:last-child {
+          color: #00A99D;
+        }
+      }
+
+      .table-bottom-text {
+        font-size: 1.6rem;
+      }
+
+    }
+
+  }
+}

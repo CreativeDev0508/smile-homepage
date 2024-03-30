@@ -1,0 +1,61 @@
+.container {
+  .damaged-info {
+    overflow: auto;
+
+    &-title {
+      margin-top: 2rem;
+      border-bottom: solid 2px #00A99D;
+      font-size: 2.8rem;
+      color: #00A99D;
+    }
+
+    table {
+      width: 100%;
+      margin-top: 3rem;
+      font-size: 1.8rem;
+      min-width: 648px;
+
+      tr,
+      td,
+      th {
+        border: solid 1px black;
+      }
+
+      th {
+        background-color: #CCECDC;
+
+        &:nth-child(1) {
+          width: 16%;
+        }
+        &:nth-child(2) {
+          width: 30%;
+        }
+      }
+
+      tr {
+        td {
+          text-align: center;
+
+          &>span {
+            margin: 0 1rem;
+
+            @include md {
+              display: block;
+            }
+          }
+
+          input {
+            width: 100%;
+            height: 100%;
+            border: none;
+            text-align: center;
+          }
+
+          input[type="checkbox"] {
+            width: auto;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.container {
+  .insurance-table {
+    table {
+      tbody {
+        td {
+          .insurance-option {
+            background-color: #FFF200;
+            border: solid 1.5px #0A51A1;
+            border-radius: 4.4px;
+            width: fit-content;
+            padding: 0.5rem;
+          }
+
+          .disaster {
+            background-color: #0A51A1;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+
+  .insurance-options-table {
+    tr {
+      border-top: solid 2px #0A51A1 !important;
+      border-bottom: solid 2px #0A51A1 !important;
+    }
+  }
+}

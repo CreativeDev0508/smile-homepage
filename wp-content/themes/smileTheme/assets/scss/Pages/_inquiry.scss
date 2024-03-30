@@ -1,0 +1,203 @@
+.container {
+  .inquiry-phone {
+    background-color: #00A99D;
+    border-radius: 1.2rem;
+    padding: 1.9rem 4.2rem;
+    display: flex;
+    align-items: center;
+    width: 80%;
+
+    @include md {
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .inquiry-phone-title {
+      margin-right: 3rem;
+
+      p {
+        color: white;
+        font-size: 1.9rem;
+
+        &:first-child {
+          font-size: 2.7rem;
+          border-bottom: 1px solid white;
+        }
+      }
+    }
+
+    .inquiry-phone-number {
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 6rem;
+      }
+
+      p {
+        font-size: 5.8rem;
+        font-weight: bold;
+        font-family: helvetica;
+        color: white;
+      }
+    }
+  }
+
+  .inquiry-form {
+    form {
+      border: 3px solid #00A99D;
+      width: 100%;
+      border-radius: 1.2rem;
+      padding: 3rem 3.8rem;
+      font-size: 2.2rem;
+
+      div {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+        font-size: 1.8rem;
+
+        @include sm {
+          display: block;
+        }
+
+        label {
+          span {
+            font-size: 1.6rem;
+            color: white;
+            background-color: #00A99D;
+            margin-left: 2rem;
+            padding: 0.1rem 0.5rem;
+          }
+        }
+
+        input,
+        textarea {
+          width: 69rem;
+          padding: 1rem;
+
+          @include sm {
+            width: 100%;
+            margin-top: 1rem;
+          }
+        }
+      }
+
+      button[type=submit] {
+        padding: 0.7rem 6.5rem;
+        font-size: 2.2rem;
+        color: white;
+        background-color: #00A99D;
+        margin: auto;
+      }
+    }
+  }
+
+  .faq-group {
+    .faq-title {
+      margin-top: 8.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      border-bottom: 1px solid #00A99D;
+      color: #00A99D;
+
+      h2 {
+        font-size: 5.4rem;
+        margin-right: 7rem;
+      }
+
+      p {
+        font-size: 2.3rem;
+      }
+    }
+
+    .faq-container {
+      margin: 0 auto;
+
+      .faq {
+        border-bottom: solid 1px #00A99D;
+        padding: 3rem;
+        margin: 2rem 0;
+        position: relative;
+        overflow: hidden;
+        transition: 1s ease;
+
+        .active {
+
+          &::before,
+          &::after {
+            content: "\f075";
+            font-family: 'Font Awesome 5 Free';
+            color: #2ecc71;
+            position: absolute;
+            font-size: 7rem;
+            opacity: .2;
+            top: 20px;
+            left: 20px;
+            z-index: 0;
+          }
+
+          &::before {
+            color: #3498db;
+            top: -10px;
+            left: -30px;
+            transform: rotateY(180deg);
+          }
+        }
+
+        .faq-title {
+          margin: 0 35px 0 0;
+          border-bottom: none;
+          font-size: 2.3rem;
+        }
+
+        .faq-text {
+          display: none;
+          margin: 30px 0 0;
+          font-size: 2rem;
+        }
+
+        .faq-toggle {
+          border: 0;
+          border-radius: 50%;
+          background-color: transparent;
+          cursor: pointer;
+          font-size: 16px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+          right: 30px;
+          top: 30px;
+          height: 30px;
+          width: 30px;
+
+          .fa-times {
+            display: none;
+          }
+        }
+
+      }
+    }
+
+    .faq.active .faq-text {
+      display: block;
+    }
+
+    .faq.active .faq-toggle .fa-times {
+      display: block;
+      color: red;
+    }
+
+    .faq.active .faq-toggle .fa-plus {
+      display: none;
+      color: #00A99D;
+    }
+
+    .faq.active .faq-toggle {
+      background: #999;
+    }
+
+  }
+}

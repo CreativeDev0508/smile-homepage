@@ -1,0 +1,38 @@
+//breakpoint
+$breakpoint-xxl: 1281px; //1281px～
+$breakpoint-xl: 1280px; //1025px～1280px
+$breakpoint-lg: 1024px; //769px～1024px
+$breakpoint-md: 768px; //577px～768px
+$breakpoint-sm: 640px; //376px～640px
+$breakpoint-xs: 375px; //～375px
+
+@mixin xxl {
+    @media (min-width: ($breakpoint-xxl)) {
+        @content;
+    }
+}
+@mixin xl {
+    @media (max-width: ($breakpoint-xl)) {
+        @content;
+    }
+}
+@mixin lg {
+    @media (max-width: ($breakpoint-lg)) {
+        @content;
+    }
+}
+@mixin md {
+    @media (max-width: ($breakpoint-md)) {
+        @content;
+    }
+}
+@mixin sm {
+    @media (max-width: ($breakpoint-sm)) {
+        @content;
+    }
+}
+@mixin xs {
+    @media (max-width: ($breakpoint-xs)) {
+        @content;
+    }
+}

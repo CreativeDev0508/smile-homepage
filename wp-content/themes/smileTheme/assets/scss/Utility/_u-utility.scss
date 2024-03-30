@@ -1,0 +1,210 @@
+.font-weight-bold {
+  font-weight: bold;
+}
+
+.font-size-12 {
+  font-size: 1.2rem !important;
+}
+
+.font-size-14 {
+  font-size: 1.4rem !important;
+}
+
+.font-size-16 {
+  font-size: 1.6rem !important;
+}
+
+.font-size-18 {
+  font-size: 1.8rem !important;
+}
+
+.font-size-20 {
+  font-size: 2rem !important;
+}
+
+.font-size-22 {
+  font-size: 2.2rem !important;
+}
+
+.font-size-24 {
+  font-size: 2.4rem;
+}
+
+.font-size-25 {
+  font-size: 2.5rem;
+}
+
+.min-weight-1028 {
+  min-width: 1028px;
+}
+
+.bg-none {
+  background-color: unset;
+}
+
+.padding-0 {
+  padding: 0 !important;
+}
+
+.pr-7 {
+  padding-right: 7rem !important;
+}
+
+.product-color {
+  color: #F37021 !important;
+}
+
+.manager-color {
+  color: #0DB14B !important;
+}
+
+.business-color {
+  color: #0072BC !important;
+}
+
+.fiduciary-color {
+  margin-top: 1.5rem;
+  color: #CC7B16 !important;
+}
+
+.bgcolor-blue {
+  background-color: #0072BC !important;
+}
+
+.bgcolor-fiduciary {
+  background-color: #CC7B16 !important;
+}
+
+.color-red {
+  color: red !important;
+}
+
+.bgcolor-red {
+  background-color: red !important;
+}
+
+.width-30 {
+  width: 30% !important;
+}
+
+.width-32 {
+  width: 32% !important;
+}
+
+.font-size-38 {
+  font-size: 3.8rem;
+}
+
+.Helvetica {
+  font-family: HelveticaNeue-Bold;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.arrow-right {
+  background-color: #CC7B16;
+  clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+  display: inline-block;
+  width: 2.4rem;
+  height: 2rem;
+  vertical-align: middle;
+}
+
+.cotracted-color {
+  color: #ED0C6E !important;
+}
+
+.bgcolor-cotracted {
+  background-color: #ED0C6E !important;
+}
+
+.text-white {
+  color: white;
+}
+
+.mr-7 {
+  margin-right: 7rem !important;
+
+  @include lg {
+    margin-right: 1rem !important;
+  }
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.comprehensive-color {
+  color: #00984A !important;
+
+}
+
+.bgcolor-comprehensive {
+  background-color: #00984A !important;
+}
+
+.movables-color {
+  color: #92278F !important;
+}
+
+.bgcolor-movables {
+  background-color: #92278F !important;
+}
+
+.position-rel {
+  position: relative !important;
+}
+
+.width-100 {
+  width: 100% !important;
+}
+
+.mr-40 {
+  margin-right: 4rem !important;
+}
+
+.width-27 {
+  width: 27rem !important;
+}
+
+.width-8 {
+  width: 8rem !important;
+}
+
+.ml-60 {
+  margin-left: 6rem !important;
+}
+
+.height-5 {
+  height: 5rem;
+}
+
+.sm-none {
+  @include sm {
+    display: none;
+  }
+}
+
+.md-none {
+  @include md {
+    display: none;
+  }
+}
+
+.md-show {
+  display: none;
+
+  @include md {
+    display: block;
+  }
+}
+
+.vertical-bottom {
+  vertical-align: bottom !important;
+}
+
+.mt-45 {
+  margin-top: 4.5rem !important;
+}

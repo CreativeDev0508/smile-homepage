@@ -1,0 +1,229 @@
+.container {
+  .what-smile-title {
+    display: flex;
+    align-items: center;
+    margin-top: 8rem !important;
+
+    .square-icon {
+      display: block;
+      width: 3rem;
+      height: 3rem;
+      background-color: #00A99D;
+      margin-right: 1rem;
+    }
+
+    .what-smile-text {
+      font-size: 3.2rem;
+
+      @include sm {
+        font-size: 2.1rem;
+      }
+
+      color: #00A99D;
+    }
+  }
+
+  .what-smile-contents {
+    font-size: 2.2rem;
+    margin-top: 1rem;
+  }
+
+  .smile-imgs {
+    margin-top: 3.7rem;
+    display: flex;
+    justify-content: center;
+
+    img {
+      width: 56rem;
+      margin: auto;
+
+      @include md {
+        width: 46rem;
+      }
+
+    }
+
+    p {
+      position: absolute;
+      font-size: 3.2rem;
+      color: white;
+
+      @include md {
+        font-size: 2.4rem;
+      }
+    }
+
+    .welfare1 {
+      top: 14rem;
+      left: 9rem;
+      letter-spacing: 0.3rem;
+
+      @include md {
+        top: 12rem;
+        left: 7rem;
+
+      }
+
+    }
+
+    .welfare2 {
+      top: 21rem;
+      left: -3.8rem;
+      color: black;
+      font-size: 6.4rem;
+      font-family: AdobeHandwriting-Ernie;
+
+      @include md {
+        font-size: 4.8rem;
+        top: 18rem;
+        left: -2.8rem;
+      }
+
+    }
+
+    .insurance1 {
+      top: 14rem;
+      left: 33rem;
+      letter-spacing: 0.3rem;
+
+      @include md {
+        top: 12rem;
+        left: 28rem;
+      }
+
+    }
+
+    .insurance2 {
+      top: 21rem;
+      left: 36rem;
+      width: 31rem;
+      color: black;
+      font-size: 6.4rem;
+      font-family: AdobeHandwriting-Ernie;
+
+      @include md {
+        width: 24rem;
+        font-size: 4.8rem;
+        top: 18rem;
+        left: 30rem;
+      }
+
+    }
+
+    .solatium1 {
+      top: 38rem;
+      left: 19.5rem;
+      letter-spacing: 0.3rem;
+
+      @include md {
+        top: 32rem;
+        left: 16.5rem;
+      }
+
+    }
+
+    .solatium2 {
+      top: 44rem;
+      left: 14.3rem;
+      color: black;
+      font-size: 6.4rem;
+      font-family: AdobeHandwriting-Ernie;
+
+      @include md {
+        font-size: 4.8rem;
+        top: 37rem;
+        left: 12.3rem;
+      }
+    }
+
+  }
+
+  .what-smile-title-2th {
+    margin-top: 11.2rem;
+  }
+
+  .what-smile-contents-2th {
+    p {
+      padding-top: 2.6rem;
+
+      &:last-child {
+        font-size: 2.6rem;
+        color: #00A99D;
+
+        span {
+          padding: 1rem 0;
+          border-bottom: 1px solid #00A99D;
+        }
+      }
+    }
+
+    &-custom {
+      font-size: 3.6rem;
+      margin-left: 4.6rem;
+      border-bottom: none !important;
+    }
+  }
+
+  .what-smile-contents-3th {
+    .what-smile-btn {
+      display: inline-block;
+      width: 25.2rem;
+      transition: all .3s;
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+      padding: 0.8rem 0 0.8rem 2.8rem;
+      border-radius: 3.2rem;
+      display: block;
+      margin-top: 3rem;
+      color: white;
+
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #00A99D;
+        border-radius: 10rem;
+        z-index: -2;
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        background-color: darken(#00A99D, 15%);
+        transition: all .3s;
+        border-radius: 10rem;
+        z-index: -1;
+      }
+
+      &-custom {
+        width: 47.4rem;
+        font-size: 2.1rem;
+        border-radius: 4.5rem;
+        letter-spacing: 0.3rem;
+      }
+
+      &:hover {
+        color: #fff;
+
+        &:before {
+          width: 100%;
+        }
+      }
+
+      span {
+        img {
+          margin-left: 2rem;
+          width: 4.5rem;
+        }
+      }
+    }
+  }
+}

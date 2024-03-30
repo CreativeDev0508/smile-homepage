@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Mukta:wght@200;300;400;500;600;700;800&family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+
+@font-face {
+    font-family: 'Kozuka Gothic Pr6N';
+    src: url('KozGoPr6N-Heavy.otf');
+    src: local('Kozuka Gothic Pr6N'), local('Kozuka Gothic Pr6N heavy'), url('KozGoPr6N-Heavy.otf');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Kozuka Gothic Pr6N';
+    src: url('KozGoPr6N-Bold.otf');
+    src: local('Kozuka Gothic Pr6N'), local('Kozuka Gothic Pr6N Bold'), url('KozGoPr6N-Bold.otf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Kozuka Gothic Pr6N';
+    src: url('KozGoPr6N-Medium.otf');
+    src: local('Kozuka Gothic Pr6N'), local('Kozuka Gothic Pr6N Medium'), url('KozGoPr6N-Medium.otf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Kozuka Gothic Pr6N';
+    src: url('KozGoPr6N-Regular.otf');
+    src: local('Kozuka Gothic Pr6N'), local('Kozuka Gothic Pr6N Regular'), url('KozGoPr6N-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Kozuka Gothic Pr6N';
+    src: url('KozGoPr6N-Light.otf');
+    src: local('Kozuka Gothic Pr6N'), local('Kozuka Gothic Pr6N Light'), url('KozGoPr6N-Light.otf');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'KoburinaGoStdN';
+    src: url('KoburinaGoStdN-W6.otf');
+    src: local('KoburinaGoStdN'), local('KoburinaGoStdN W6'), url('KoburinaGoStdN-W6.otf');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans CJK JP';
+    src: url('NotoSansCJKjp-Black.otf');
+    src: local('Noto Sans CJK JP'), local('Noto Sans CJK JP Black'), url('NotoSansCJKjp-Black.otf');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans CJK JP';
+    src: url('NotoSansCJKjp-Bold.otf');
+    src: local('Noto Sans CJK JP'), local('Noto Sans CJK JP Bold'), url('NotoSansCJKjp-Bold.otf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans CJK JP';
+    src: url('NotoSansCJKjp-Medium.otf');
+    src: local('Noto Sans CJK JP'), local('Noto Sans CJK JP Medium'), url('NotoSansCJKjp-Medium.otf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans CJK JP';
+    src: url('NotoSansCJKjp-Regular.otf');
+    src: local('Noto Sans CJK JP'), local('Noto Sans CJK JP Regular'), url('NotoSansCJKjp-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans CJK JP';
+    src: url('NotoSansCJKjp-Light.otf');
+    src: local('Noto Sans CJK JP'), local('Noto Sans CJK JP Light'), url('NotoSansCJKjp-Light.otf');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'KumoyaStd';
+    src: url('A-OTF-KumoyaStd-Regular.otf');
+    src: local('KumoyaStd'), local('KumoyaStd regular'), url('A-OTF-KumoyaStd-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HiraKakuPro';
+    src: url('HiraKakuPro-W3.otf');
+    src: local('HiraKakuPro'), local('HiraKakuPro w3'), url('HiraKakuPro-W3.otf');
+    font-weight: normal;
+    font-style: normal;
+}

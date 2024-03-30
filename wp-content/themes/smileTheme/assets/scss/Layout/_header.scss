@@ -1,0 +1,144 @@
+html {
+  color: $base_color;
+}
+
+
+header {
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  right: 0;
+  z-index: 999;
+  background-color: #C9E9E6;
+  font-family: UDShinGoNTPro-Bold;
+
+  .header-logo {
+    background-color: #00A99D;
+
+    @include sm {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .icon {
+      display: none;
+
+      @include sm {
+        display: block;
+      }
+
+      i {
+        color: white;
+        font-size: 2.1rem;
+        padding: 2.2rem;
+      }
+    }
+
+    .logo-layout {
+      display: flex;
+      justify-content: center;
+      padding: 3.2rem 0;
+
+      @include sm {
+        justify-content: flex-start;
+        padding: 1.3rem 1.6rem;
+      }
+
+      img {
+        width: 7rem;
+        height: 7rem;
+
+        @include sm {
+          width: 3.7rem;
+          height: 3.7rem;
+        }
+      }
+
+
+      h1 {
+        font-weight: 900;
+        font-size: 4.5rem;
+        color: white;
+        letter-spacing: 1rem;
+        padding: 0 1.6rem;
+        line-height: 1.5;
+
+        @include sm {
+          font-size: 2.4rem;
+          padding: 0 0.8rem;
+        }
+      }
+    }
+  }
+
+  .header-nav {
+    margin: 2.5rem 0;
+
+    @include xl {
+      margin: 0;
+    }
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+      max-width: 1100px;
+      margin: 0 auto;
+
+      @include xl {
+        justify-content: center;
+      }
+
+      @include sm {
+        display: block;
+        padding: 8rem 2.5rem;
+      }
+
+      li {
+        @include xl {
+          padding: 2.5rem 2.75rem;
+        }
+
+        @include sm {
+          padding: 2rem 0;
+          // transition: 0.2s;
+          // transform: translateZ(0);
+          border-bottom: 1px solid #00A99D;
+        }
+
+        a {
+          font-size: 1.6rem;
+          color: #00A99D;
+
+          @include sm {
+            padding: 1rem;
+            font-size: 2.4rem;
+            font-size: 2rem !important;
+          }
+
+          @include md {
+            font-size: 1.3rem;
+          }
+        }
+      }
+    }
+
+    @include sm {
+      display: none;
+      animation: fadeIn 2s;
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+
+        to {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  @include sm {
+    width: 100%;
+  }
+}
